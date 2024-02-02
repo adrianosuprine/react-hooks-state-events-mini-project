@@ -20,5 +20,7 @@ test("is removed from the list when the delete button is clicked", () => {
 
   fireEvent.click(deleteButton);
 
+
   expect(screen.queryByText(/Buy rice/)).not.toBeInTheDocument();
 });
+
